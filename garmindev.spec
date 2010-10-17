@@ -27,18 +27,15 @@ Provides:	%{name} = %{version}-%{release}
 Drivers for communication with Garmin GPS devices used by QLandkarteGT.
 
 %prep
-
 %setup -q
 
 %build
-export CXXFLAGS="%{optflags} -fno-strict-aliasing"
-%cmake ..
-%make VERBOSE=1
+%cmake
+%make
 
 %install
 rm -rf %{buildroot}
-cd build
-%makeinstall_std
+%makeinstall_std -C build
 
 # fix perms on plugins
 find %{buildroot}%{_libdir}/qlandkartegt -type f -exec chmod 0755 {} \;
