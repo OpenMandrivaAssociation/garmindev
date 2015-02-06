@@ -5,7 +5,7 @@
 Summary:	Drivers for communication with Garmin GPS devices
 Name:		garmindev
 Version:	0.3.4
-Release:	%mkrel 1
+Release:	2
 Group:		System/Libraries
 License:	GPLv2+
 URL:		http://www.qlandkarte.org
