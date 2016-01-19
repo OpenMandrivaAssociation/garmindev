@@ -11,7 +11,7 @@ License:	GPLv2+
 URL:		http://www.qlandkarte.org
 Source0:	http://downloads.sourceforge.net/qlandkartegt/%{name}-%{version}.tar.gz
 BuildRequires:	cmake
-BuildRequires:	libusb-devel
+BuildRequires:	pkgconfig(libusb-1.0)
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
