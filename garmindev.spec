@@ -8,7 +8,7 @@ Version:	0.3.4
 Release:	2
 Group:		System/Libraries
 License:	GPLv2+
-URL:		http://www.qlandkarte.org
+URL:		https://www.qlandkarte.org
 Source0:	http://downloads.sourceforge.net/qlandkartegt/%{name}-%{version}.tar.gz
 BuildRequires:	cmake
 BuildRequires:	pkgconfig(libusb)
